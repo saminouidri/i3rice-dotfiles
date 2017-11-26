@@ -163,22 +163,26 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3blocks -c /home/surox/i3blocks.conf
+        position top
 }
 
 #start spotify on startup
-exec spotify
+#exec spotify
 
 #wallpaper
-exec_always feh --bg-scale /home/surox/Downloads/wallpapermin.jpg
+exec_always wal -i /home/surox/Downloads/retrofuturistic.jpg
 
 #firefox
-exec dolphin
+#exec dolphin
 
 #screen_layout
 exec brandr
 
 #compton
 exec_always compton
+
+#firefox
+bindsym $mod+u exec=/home/surox/Documents/firefox/firefox
 
 set $bg-color #2f343f
 set $inactive-bg-color #2f343f
@@ -210,3 +214,4 @@ hide_edge_borders both
 
 gaps inner 10
 gaps outer 25
+
