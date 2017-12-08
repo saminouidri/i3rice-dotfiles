@@ -181,9 +181,6 @@ exec brandr
 #compton
 exec_always compton
 
-#xcompmgr
-#exec_always xcompmgr -c -f -n 
-
 #firefox
 bindsym $mod+u exec=/home/surox/Documents/firefox/firefox
 
@@ -218,13 +215,3 @@ hide_edge_borders both
 gaps inner 10
 gaps outer 25
 
-# custom keybinding to lockscreen, use --lock dim or --lock blur below for different backgrounds
-bindsym $mod+shift+x exec_always /usr/bin/betterlockscreen/lock.sh --lock
-# bindsym $mod+shift+x exec_always /usr/bin/betterlockscreen/lock.sh --lock dim
-# bindsym $mod+shift+x exec_always /usr/bin/betterlockscreen/lock.sh --lock blur
-
-# Update image cache
-exec_always --no-startup-id /usr/bin/betterlockscreen/lock.sh -U /home/surox/Downloads/retrofuturistic.jpg
-
-# Set last used image as desktop background, comment out below line if you use different desktop background utility
-#exec --no-startup-id lock.sh -w
